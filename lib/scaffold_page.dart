@@ -1,0 +1,72 @@
+import 'package:flutter/material.dart';
+
+class ScaffoldPage extends StatefulWidget {
+  const ScaffoldPage({super.key});
+
+  @override
+  State<ScaffoldPage> createState() => _ScaffoldPageState();
+}
+
+class _ScaffoldPageState extends State<ScaffoldPage> {
+  bool isENGSelected=true;
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+     body: Column(
+       children: [
+         Container(
+           height: 40,
+           color: Colors.redAccent,
+         ),
+         SizedBox(height: 5,),
+         Row(
+           mainAxisAlignment: MainAxisAlignment.end,
+           children: [
+             Padding(
+               padding: const EdgeInsets.all(12.0),
+               child: SizedBox(
+                 height: 26,width: 70,
+                 child: ClipRRect(
+                   borderRadius: BorderRadius.circular(50),
+                   child: OutlinedButton(onPressed: (){
+                     setState(() {
+                       isENGSelected=!isENGSelected;
+                     });
+                   },
+                     style: OutlinedButton.styleFrom(padding: EdgeInsets.zero,
+                    side: BorderSide(color: Colors.black87),
+                    backgroundColor: Colors.transparent),
+                                      child: Row(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          alignment:Alignment.center,
+                          color: isENGSelected?Colors.transparent:Colors.redAccent,
+                          child: Text("বাং"),
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          alignment:Alignment.center,
+                          //color: Colors.redAccent,
+                         // decoration: BoxDecoration(color: Colors.redAccent),
+                          color: isENGSelected?Colors.redAccent:Colors.transparent,
+                          child: Text("END"),
+
+                        ),
+                      )
+                    ],
+                                      ),
+                                      ),
+                 ),
+               ),
+             ),
+           ],
+         )
+
+       ],
+     ),
+    );
+  }
+}
+
