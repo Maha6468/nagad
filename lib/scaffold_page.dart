@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nagad/cus_Widget/language_Transfer.dart';
 
 class ScaffoldPage extends StatefulWidget {
   const ScaffoldPage({super.key});
@@ -40,26 +41,8 @@ class _ScaffoldPageState extends State<ScaffoldPage> {
                       ),
                       child: Row(
                         children: [
-                          Expanded(
-                            child: Container(
-                              alignment: Alignment.center,
-                              color: isENGSelected
-                                  ? Colors.transparent
-                                  : Colors.redAccent,
-                              child: Text("বাং"),
-                            ),
-                          ),
-                          Expanded(
-                            child: Container(
-                              alignment: Alignment.center,
-                              //color: Colors.redAccent,
-                              // decoration: BoxDecoration(color: Colors.redAccent),
-                              color: isENGSelected
-                                  ? Colors.redAccent
-                                  : Colors.transparent,
-                              child: Text("END"),
-                            ),
-                          ),
+                          EngTOBang(text:"বাং",isENGSelected:!isENGSelected,),
+                          EngTOBang(text:"ENG",isENGSelected:isENGSelected,),
                         ],
                       ),
                     ),
