@@ -10,7 +10,7 @@ class ScaffoldPage extends StatefulWidget {
 }
 
 class _ScaffoldPageState extends State<ScaffoldPage> {
-  bool isENGSelected = true;
+  //bool isENGSelected = true;
 
   @override
   Widget build(BuildContext context) {
@@ -19,8 +19,8 @@ class _ScaffoldPageState extends State<ScaffoldPage> {
       body: Column(
         children: [
           Container(height: 40, color: Colors.redAccent),
-          SizedBox(height: 5),
-          Row(
+          SizedBox(height: 4),
+         /* Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Padding(
@@ -52,7 +52,7 @@ class _ScaffoldPageState extends State<ScaffoldPage> {
                 ),
               ),
             ],
-          ),
+          ),*/
           NagodLogo(),
         ],
       ),

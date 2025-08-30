@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nagad/cus_Widget/language_Transfer.dart';
+import 'package:nagad/cus_Widget/normal.dart';
 
 class NagodLogo extends StatelessWidget {
  // final bool isENGSelected;
@@ -8,15 +9,19 @@ class NagodLogo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 250,width: 350,
+      height: 250,width:MediaQuery.of(context).size.width,
       child: Stack(
         alignment: Alignment.center,
           children: [
             Positioned(
-              top:-30,
+              top: 1,
+                right: 1,
+                child: Normal()),
+            Positioned(
+              top:1,
                 child: Image.asset("assets/images/nagad.png",height: 170,)),
             Positioned(
-              bottom: 55,
+              bottom: 25,
               child: Text("নগদ",
                 style: TextStyle(
                     fontSize: 70,
