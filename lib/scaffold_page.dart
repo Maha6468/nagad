@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nagad/cus_Widget/language_Transfer.dart';
+import 'package:nagad/cus_Widget/nagod_Logo.dart';
 
 class ScaffoldPage extends StatefulWidget {
   const ScaffoldPage({super.key});
@@ -14,6 +15,7 @@ class _ScaffoldPageState extends State<ScaffoldPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Column(
         children: [
           Container(height: 40, color: Colors.redAccent),
@@ -51,6 +53,8 @@ class _ScaffoldPageState extends State<ScaffoldPage> {
               ),
             ],
           ),
+
+          NagodLogo(),
         ],
       ),
     );
