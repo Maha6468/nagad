@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:nagad/cus_Widget/language_Transfer.dart';
 
 class NagodLogo extends StatelessWidget {
-  const NagodLogo({super.key});
+ // final bool isENGSelected;
+  const NagodLogo({super.key,});
 
   @override
   Widget build(BuildContext context) {

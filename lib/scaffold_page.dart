@@ -53,7 +53,6 @@ class _ScaffoldPageState extends State<ScaffoldPage> {
               ),
             ],
           ),
-
           NagodLogo(),
         ],
       ),
