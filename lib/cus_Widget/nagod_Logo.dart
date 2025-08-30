@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nagad/cus_Widget/language_Transfer.dart';
-import 'package:nagad/cus_Widget/normal.dart';
+import 'package:nagad/cus_Widget/eToB_Button.dart';
 
 class NagodLogo extends StatelessWidget {
  // final bool isENGSelected;
@@ -16,7 +16,7 @@ class NagodLogo extends StatelessWidget {
             Positioned(
               top: 1,
                 right: 1,
-                child: Normal()),
+                child: E_to_B_Button()),
             Positioned(
               top:1,
                 child: Image.asset("assets/images/nagad.png",height: 170,)),

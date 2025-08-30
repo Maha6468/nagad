@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 import 'language_Transfer.dart';
 
-class Normal extends StatefulWidget {
-  const Normal({super.key});
+class E_to_B_Button extends StatefulWidget {
+  const E_to_B_Button({super.key});
 
   @override
-  State<Normal> createState() => _NormalState();
+  State<E_to_B_Button> createState() => _E_to_B_ButtonState();
 }
 
-class _NormalState extends State<Normal> {
+class _E_to_B_ButtonState extends State<E_to_B_Button> {
   bool isENGSelected = true;
   @override
   Widget build(BuildContext context) {

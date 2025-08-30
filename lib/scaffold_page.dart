@@ -10,7 +10,6 @@ class ScaffoldPage extends StatefulWidget {
 }
 
 class _ScaffoldPageState extends State<ScaffoldPage> {
-  //bool isENGSelected = true;
 
   @override
   Widget build(BuildContext context) {
