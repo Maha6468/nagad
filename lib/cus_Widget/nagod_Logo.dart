@@ -55,7 +55,7 @@ class NagodLogo extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: 400,
+            top: 390,
               child: Login_Button()),
 
         ],

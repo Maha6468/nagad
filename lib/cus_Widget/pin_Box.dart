@@ -11,7 +11,12 @@ class _PinBoxState extends State<PinBox> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-
+      decoration: InputDecoration(
+        labelText: "PIN",
+        labelStyle: TextStyle(color: Colors.grey,fontSize: 18),
+        isDense: true,
+        contentPadding: EdgeInsets.only(bottom: -8)
+      ),
     );
   }
 }
