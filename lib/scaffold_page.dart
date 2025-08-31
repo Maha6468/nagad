@@ -4,11 +4,12 @@ import 'package:nagad/cus_Widget/pin_Box.dart';
 
 class ScaffoldPage extends StatefulWidget {
   const ScaffoldPage({super.key});
+
   @override
   State<ScaffoldPage> createState() => _ScaffoldPageState();
 }
-class _ScaffoldPageState extends State<ScaffoldPage> {
 
+class _ScaffoldPageState extends State<ScaffoldPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,13 +21,10 @@ class _ScaffoldPageState extends State<ScaffoldPage> {
             Container(height: 40, color: Colors.redAccent),
             SizedBox(height: 2),
             NagodLogo(),
-            SizedBox(height: 5,),
-
-
+            SizedBox(height: 5),
           ],
         ),
       ),
     );
   }
 }
-

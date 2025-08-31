@@ -14,11 +14,14 @@ class _PinBoxState extends State<PinBox> {
       cursorColor: Colors.redAccent,
       decoration: InputDecoration(
         labelText: "PIN",
-        labelStyle: TextStyle(color: Colors.grey,fontSize: 18),
+        labelStyle: TextStyle(color: Colors.grey, fontSize: 18),
         isDense: true,
         contentPadding: EdgeInsets.only(bottom: 4),
         focusedBorder: UnderlineInputBorder(
-          borderSide: BorderSide(color: Colors.red, width: 2), // thicker red on focus
+          borderSide: BorderSide(
+            color: Colors.red,
+            width: 2,
+          ), // thicker red on focus
         ),
       ),
     );

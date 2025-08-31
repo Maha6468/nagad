@@ -35,9 +35,18 @@ class NagodLogo extends StatelessWidget {
             bottom: 470,
             child: Column(
               children: [
-                Text("Mobile Number",style: TextStyle(color: Colors.grey,fontSize: 12),),
-                Text("01819-556633",style: TextStyle(color: Colors.black87,
-                    fontWeight: FontWeight.w500,fontSize: 16),),
+                Text(
+                  "Mobile Number",
+                  style: TextStyle(color: Colors.grey, fontSize: 12),
+                ),
+                Text(
+                  "01819-556633",
+                  style: TextStyle(
+                    color: Colors.black87,
+                    fontWeight: FontWeight.w500,
+                    fontSize: 16,
+                  ),
+                ),
               ],
             ),
           ),
@@ -47,23 +56,17 @@ class NagodLogo extends StatelessWidget {
             right: 20,
             child: Row(
               children: [
-                Icon(Icons.lock_outline,color: Colors.redAccent,),
-                SizedBox(width: 10,),
-                Expanded(
-                    child: PinBox()),
+                Icon(Icons.lock_outline, color: Colors.redAccent),
+                SizedBox(width: 10),
+                Expanded(child: PinBox()),
               ],
             ),
           ),
-          Positioned(
-            top: 390,
-              child: Login_Button()
-          ),
+          Positioned(top: 390, child: Login_Button()),
           Positioned(
             top: 445,
-            child: Text("Forgot PIN?",
-              style: TextStyle(color: Colors.grey),),
-          )
-
+            child: Text("Forgot PIN?", style: TextStyle(color: Colors.grey)),
+          ),
         ],
       ),
     );
