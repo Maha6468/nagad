@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nagad/cus_Widget/language_Transfer.dart';
 import 'package:nagad/cus_Widget/eToB_Button.dart';
+import 'package:nagad/cus_Widget/login_with_OutlineB_.dart';
 import 'package:nagad/cus_Widget/pin_Box.dart';
 
 class NagodLogo extends StatelessWidget {
@@ -21,7 +21,7 @@ class NagodLogo extends StatelessWidget {
             child: Image.asset("assets/images/nagad.png", height: 170),
           ),
           Positioned(
-            bottom: 485,
+            bottom: 515,
             child: Text(
               "নগদ",
               style: TextStyle(
@@ -32,16 +32,17 @@ class NagodLogo extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: 450,
+            bottom: 470,
             child: Column(
               children: [
                 Text("Mobile Number",style: TextStyle(color: Colors.grey,fontSize: 12),),
-                Text("01819-556633",style: TextStyle(color: Colors.black87,fontWeight: FontWeight.bold),),
+                Text("01819-556633",style: TextStyle(color: Colors.black87,
+                    fontWeight: FontWeight.w500,fontSize: 16),),
               ],
             ),
           ),
           Positioned(
-            top: 300,
+            top: 315,
             left: 20,
             right: 20,
             child: Row(
@@ -52,7 +53,10 @@ class NagodLogo extends StatelessWidget {
                     child: PinBox()),
               ],
             ),
-          )
+          ),
+          Positioned(
+            top: 400,
+              child: Login_Button()),
 
         ],
       ),

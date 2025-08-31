@@ -15,12 +15,13 @@ class _ScaffoldPageState extends State<ScaffoldPage> {
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Container(height: 40, color: Colors.redAccent),
             SizedBox(height: 2),
             NagodLogo(),
             SizedBox(height: 5,),
+
 
           ],
         ),
@@ -28,3 +29,4 @@ class _ScaffoldPageState extends State<ScaffoldPage> {
     );
   }
 }
+
