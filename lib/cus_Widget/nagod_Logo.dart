@@ -56,7 +56,13 @@ class NagodLogo extends StatelessWidget {
           ),
           Positioned(
             top: 390,
-              child: Login_Button()),
+              child: Login_Button()
+          ),
+          Positioned(
+            top: 445,
+            child: Text("Forgot PIN?",
+              style: TextStyle(color: Colors.grey),),
+          )
 
         ],
       ),
