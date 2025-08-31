@@ -10,7 +10,7 @@ class NagodLogo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 250,
+      height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
       child: Stack(
         alignment: Alignment.center,
@@ -21,7 +21,7 @@ class NagodLogo extends StatelessWidget {
             child: Image.asset("assets/images/nagad.png", height: 170),
           ),
           Positioned(
-            bottom: 25,
+            bottom: 485,
             child: Text(
               "নগদ",
               style: TextStyle(
@@ -31,17 +31,29 @@ class NagodLogo extends StatelessWidget {
               ),
             ),
           ),
-
-
-          SizedBox(height: 10),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(Icons.lock_outline_rounded, color: Colors.redAccent),
-              SizedBox(width: 10),
-              Expanded(child: PinBox()),
-            ],
+          Positioned(
+            bottom: 450,
+            child: Column(
+              children: [
+                Text("Mobile Number",style: TextStyle(color: Colors.grey,fontSize: 12),),
+                Text("01819-556633",style: TextStyle(color: Colors.black87,fontWeight: FontWeight.bold),),
+              ],
+            ),
           ),
+          Positioned(
+            top: 300,
+            left: 20,
+            right: 20,
+            child: Row(
+              children: [
+                Icon(Icons.lock_outline,color: Colors.redAccent,),
+                SizedBox(width: 10,),
+                Expanded(
+                    child: PinBox()),
+              ],
+            ),
+          )
+
         ],
       ),
     );
