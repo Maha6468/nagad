@@ -11,6 +11,7 @@ class E_to_B_Button extends StatefulWidget {
 
 class _E_to_B_ButtonState extends State<E_to_B_Button> {
   bool isENGSelected = true;
+
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -36,8 +37,8 @@ class _E_to_B_ButtonState extends State<E_to_B_Button> {
                 ),
                 child: Row(
                   children: [
-                    EngTOBang(text:"বাং",isENGSelected:!isENGSelected,),
-                    EngTOBang(text:"ENG",isENGSelected:isENGSelected,),
+                    EngTOBang(text: "বাং", isENGSelected: !isENGSelected),
+                    EngTOBang(text: "ENG", isENGSelected: isENGSelected),
                   ],
                 ),
               ),
