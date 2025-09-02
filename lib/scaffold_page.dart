@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nagad/cus_Widget/nagod_Logo.dart';
 import 'package:nagad/cus_Widget/pin_Box.dart';
+import 'package:nagad/page/navigation_pages.dart';
 
 class ScaffoldPage extends StatefulWidget {
   const ScaffoldPage({super.key});
@@ -33,6 +34,17 @@ class _ScaffoldPageState extends State<ScaffoldPage> {
           setState(() {
             currentindex=index;
           });
+
+
+          if(index==0){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>StoreLocatorPage()));
+          }
+          else if(index==1){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>OffersPage()));
+          }
+          else if(index==2){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>HelpPage()));
+          }
           },
 
           items:[
