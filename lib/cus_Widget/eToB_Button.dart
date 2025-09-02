@@ -32,8 +32,8 @@ class _E_to_B_ButtonState extends State<E_to_B_Button> {
                 },
                 style: OutlinedButton.styleFrom(
                   padding: EdgeInsets.zero,
-                  side: BorderSide(color: Colors.black87),
-                  backgroundColor: Colors.transparent,
+                  side: BorderSide(color: Colors.red),
+                  backgroundColor: Colors.white,
                 ),
                 child: Row(
                   children: [

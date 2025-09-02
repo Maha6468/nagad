@@ -11,7 +11,8 @@ class ScaffoldPage extends StatefulWidget {
 }
 
 class _ScaffoldPageState extends State<ScaffoldPage> {
-  var currentindex=0;
+  var currentindex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,38 +30,45 @@ class _ScaffoldPageState extends State<ScaffoldPage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.white,
-          currentIndex: currentindex,
-          onTap: (index){
+        currentIndex: currentindex,
+        onTap: (index) {
           setState(() {
-            currentindex=index;
+            currentindex = index;
           });
 
+          if (index == 0) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => StoreLocatorPage()),
+            );
+          } else if (index == 1) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => OffersPage()),
+            );
+          } else if (index == 2) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => HelpPage()),
+            );
+          }
+        },
 
-          if(index==0){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>StoreLocatorPage()));
-          }
-          else if(index==1){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>OffersPage()));
-          }
-          else if(index==2){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>HelpPage()));
-          }
-          },
-
-          items:[
-            BottomNavigationBarItem(
-                icon: Icon(Icons.location_on_rounded,color: Colors.redAccent,),
-              label: "Store Locator",
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.local_offer,color: Colors.redAccent,),
-              label: "Offers",
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.live_help_rounded,color: Colors.redAccent,),
-              label: "Help",
-            ),
-          ]),
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.location_on_rounded, color: Colors.redAccent),
+            label: "Store Locator",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.local_offer, color: Colors.redAccent),
+            label: "Offers",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.live_help_rounded, color: Colors.redAccent),
+            label: "Help",
+          ),
+        ],
+      ),
     );
   }
 }

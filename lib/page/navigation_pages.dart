@@ -6,9 +6,11 @@ class StoreLocatorPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Store Locator"),
+      appBar: AppBar(
+        title: Text("Store Locator"),
         backgroundColor: Colors.purpleAccent,
-        centerTitle: true,),
+        centerTitle: true,
+      ),
       body: Center(child: Text("Store Locator Page")),
     );
   }
@@ -20,9 +22,11 @@ class OffersPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Offers"),
+      appBar: AppBar(
+        title: Text("Offers"),
         backgroundColor: Colors.limeAccent,
-        centerTitle: true,),
+        centerTitle: true,
+      ),
       body: Center(child: Text("Offers Page")),
     );
   }
@@ -34,9 +38,11 @@ class HelpPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Help"),
+      appBar: AppBar(
+        title: Text("Help"),
         backgroundColor: Colors.brown,
-        centerTitle: true,),
+        centerTitle: true,
+      ),
       body: Center(child: Text("Help Page")),
     );
   }
