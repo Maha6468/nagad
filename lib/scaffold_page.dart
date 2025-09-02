@@ -10,6 +10,7 @@ class ScaffoldPage extends StatefulWidget {
 }
 
 class _ScaffoldPageState extends State<ScaffoldPage> {
+  var currentindex=0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,6 +26,29 @@ class _ScaffoldPageState extends State<ScaffoldPage> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.white,
+          currentIndex: currentindex,
+          onTap: (index){
+          setState(() {
+            currentindex=index;
+          });
+          },
+
+          items:[
+            BottomNavigationBarItem(
+                icon: Icon(Icons.location_on_rounded,color: Colors.redAccent,),
+              label: "Store Locator",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.local_offer,color: Colors.redAccent,),
+              label: "Offers",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.live_help_rounded,color: Colors.redAccent,),
+              label: "Help",
+            ),
+          ]),
     );
   }
 }
