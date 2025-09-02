@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:nagad/cus_Widget/nagod_Logo.dart';
-import 'package:nagad/cus_Widget/pin_Box.dart';
 import 'package:nagad/page/navigation_pages.dart';
 
 class ScaffoldPage extends StatefulWidget {
