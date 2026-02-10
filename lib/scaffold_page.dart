@@ -34,7 +34,6 @@ class _ScaffoldPageState extends State<ScaffoldPage> {
           setState(() {
             currentindex = index;
           });
-
           if (index == 0) {
             Navigator.push(
               context,
