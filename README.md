@@ -7,9 +7,9 @@ A new Flutter project.
 ## 📸 Screenshots
 
 
-| Splash Screen | Sign_In | Loading Time |
+| 1stPage | otherPage | Loading Time |
 |-------|----------|-----------------|
-| ![Splash Screen](screenshorts/splash.jpeg) | ![Sign_In](screenshorts/sign_In.jpeg) | ![Loading Time](screenshorts/loadingTime.jpeg) |
+| ![1stPage](screenshots/1stPage.jpeg) | ![otherPage](screenshots/other page.jpeg) | 
 
 | News Screen | Details |
 |-------------|-----------|
