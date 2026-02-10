@@ -9,7 +9,7 @@ A new Flutter project.
 
 | 1stPage | otherPage | Loading Time |
 |-------|----------|-----------------|
-| ![1stPage](screenshots/1stPage.jpeg) | ![otherPage](screenshots/other page.jpeg) | 
+| ![1stPage](screenshots/1stPage.jpeg) | ![otherPage](screenshots/otherpage.jpeg) | 
 
 | News Screen | Details |
 |-------------|-----------|
