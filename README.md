@@ -7,13 +7,9 @@ A new Flutter project.
 ## 📸 Screenshots
 
 
-| 1stPage | otherPage | Loading Time |
-|-------|----------|-----------------|
-| ![1stPage](screenshots/1stPage.jpeg) | ![otherPage](screenshots/otherpage.jpeg) | 
-
-| News Screen | Details |
-|-------------|-----------|
-| ![News Screen](screenshorts/news_Screen.jpeg) | ![Details](screenshorts/details.jpeg) |
+| 1stPage | other Page |
+|-------|----------|
+| ![1stPage](screenshots/1stPage.jpeg) | ![other Page](screenshots/other_page.jpeg) | 
 
 ---
 
